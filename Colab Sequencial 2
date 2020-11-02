@@ -1,0 +1,91 @@
+import keras
+print('keras: %s' % keras.__version__)
+
+import theano as th
+import h5py
+from keras.models import model_from_json
+import pickle
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn import svm
+
+### General imports ###
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from time import time
+from time import sleep
+import seaborn as sns
+import re
+import os
+import argparse
+from collections import OrderedDict
+import matplotlib.animation as animation
+from xgboost import XGBClassifier
+
+### Image processing ###
+from scipy.ndimage import zoom
+from scipy.spatial import distance
+import imutils
+from scipy import ndimage
+import cv2
+import dlib
+from __future__ import division
+from imutils import face_utils
+
+pip install --upgrade keras
+
+
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Activation, Dense, Flatten, BatchNormalization, Conv2D, MaxPool2D
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.metrics import categorical_crossentropy
+from sklearn.metrics import confusion_matrix
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import numpy as np
+import itertools
+import os
+import random
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+import tensorflow.keras
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+from tensorflow.keras.callbacks import TensorBoard
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, SeparableConv2D
+from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D, SeparableConv2D, ZeroPadding2D, UpSampling2D, BatchNormalization, Input, GlobalAveragePooling2D, AveragePooling2D
+#from tensorflow. keras.utils import np_utils
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.optimizers import SGD, RMSprop
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras import models
+from keras.utils.vis_utils import plot_model
+from tensorflow.keras.layers import Input, GlobalAveragePooling2D
+from tensorflow.keras.models import Model
+from tensorflow.keras import layers
+from tensorflow.keras.applications import densenet
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation,Flatten, BatchNormalization
+from keras.layers import MaxPool2D,Conv2D
+import os
+
+num_classes = 6
+img_rows,img_cols = 48,48
+batch_size=8
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+
+
+X_train = r"https://drive.google.com/drive/folders/1GI4vXSWIDVbWp6ZZvalzvpUCmQXqjdzm?usp=sharing"
+y_train = r"https://drive.google.com/drive/folders/1wlCDDU3WOcQM5g3v1MssRWsyxJMCPYKR?usp=sharing"
